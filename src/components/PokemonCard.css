@@ -1,0 +1,22 @@
+.pokecard {
+  border: solid black;
+  margin-right: 1000px;
+}
+.pokestats {
+  font-size: large;
+  padding-left: 100px;
+}
+
+.pokename {
+  padding-left: 100px;
+}
+
+.type {
+  font-size: x-large;
+  border-radius: 25px;
+  background: green;
+  padding-left: 10px;
+  width: 60px;
+  height: 40px;
+  border: 2px solid black;
+}

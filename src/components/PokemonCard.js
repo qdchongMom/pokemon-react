@@ -7,7 +7,7 @@ function PokemonCard({ pokemon }) {
     <div className="pokecard">
       <img
         className="img-pokemon"
-        src={`${process.env.PUBLIC_URL}/pokemonImage/1.png`}
+        src={`${process.env.PUBLIC_URL}/pokemonImage/${id}.png`}
         alt="pokemon"
       />
       <div className="pokename">
@@ -15,8 +15,9 @@ function PokemonCard({ pokemon }) {
       </div>
 
       <div className="type">
-        <span className="type1">{type[0]}</span>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span>{type[1]}</span>
+        {type.map((type) => (
+          <span className={`type1 ${type.toLowerCase()}`}>{type}</span>
+        ))}
       </div>
       <div className="pokestats">
         <div>HP: {base.HP}</div>

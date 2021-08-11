@@ -1,22 +1,75 @@
 .pokecard {
-  border: solid black;
-  margin-right: 1000px;
+  border: 2px solid black;
+  height: auto;
+  width: 300px;
+  margin: 10px;
+  background: lightyellow;
 }
-.pokestats {
-  font-size: large;
-  padding-left: 100px;
+
+.img-pokemon {
+  display: block;
+  max-width: 150px;
+  max-height: 150px;
+  margin-left: 80px;
 }
 
 .pokename {
-  padding-left: 100px;
+  text-align: center;
 }
 
 .type {
+  display: flex;
+  justify-content: center;
+}
+.type .type1 {
   font-size: x-large;
-  border-radius: 25px;
-  background: green;
-  padding-left: 10px;
-  width: 60px;
-  height: 40px;
+  border-radius: 50px;
   border: 2px solid black;
+  margin-left: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.poison {
+  background: purple;
+}
+
+.grass {
+  background: green;
+}
+
+.fire {
+  background: red;
+}
+
+.water {
+  background: lightskyblue;
+}
+
+.bug {
+  background: darkcyan;
+}
+
+.flying {
+  background: pink;
+}
+
+.electric {
+  background: yellow;
+}
+.ground {
+  background: brown;
+}
+.normal {
+  background: orange;
+}
+
+.fairy {
+  background: palevioletred;
+}
+.pokestats {
+  font-size: large;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
